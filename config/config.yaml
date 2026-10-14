@@ -3,6 +3,8 @@
 keyboard:
   s:
     switch: s_start
+  c:
+    switch: s_cap1
 
 modes:
   - base
@@ -20,12 +22,7 @@ flippers:
     activation_switch:
     eos_switch:
     label:
-  upper_left:
-    main_coil:
-    hold_coil:
-    activation_switch:
-    eos_switch:
-    label:
+
 ball_devices:
   bd_trough:
     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam,
@@ -59,22 +56,24 @@ switches:
   s_start:
     number: 1
     tags: start
-  s_trough1:
+  s_shooter_lane:
+    number: 190
+  s_left_flipper:
     number: 2
-    type: NC
-  s_trough2:
+    tags: left_flipper
+  s_right_flipper:
     number: 3
-    type: NC
-  s_trough3:
+    tags: s_right_flipper
+  s_trough1:
     number: 4
     type: NC
-  s_trough4:
+  s_trough2:
     number: 5
     type: NC
-  s_trough5:
+  s_trough3:
     number: 6
     type: NC
-  s_trough6:
+  s_trough4:
     number: 7
     type: NC
   s_trough_jam:
@@ -88,12 +87,21 @@ switches:
   s_moon2_sling:
     number: 12
     type: NC
-  s_moon3_sling:
+  s_bolt_sling:
     number: 13
     type: NC
-  s_moon4_sling:
+  s_bolt2_sling:
     number: 14
     type: NC
+  s_r_outlane:
+    number: 19
+    tags: playfield_active
+  s_left_outline:
+    number: 20
+    tags: playfield_active
+  s_left_inlane:
+    number: 21
+    tags: playfield_active
   s_popbumperleft:
     number: 15
     type: NC
@@ -106,34 +114,222 @@ switches:
   s_popbumperright2:
     number: 18
     type: NC
+  s_right_ramp:
+    number: 22
+    tags: playfield_active
+    type: NC
+  s_star_slide:
+    number: 23
+    type: NC
+    tags: ramp
+  s_tilt:
+    number: 24
+    tags: tilt_bob
 
 lights:
   l_shoot_again:
     number: 1
+    platform_settings:
+        polarity: false
+    tags: lamps, gi
   l_left_lane_guide1:
     number: 2
+    platform_settings:
+        polarity: false
+    tags: lamps, gi
   l_left_lane_guide2:
     number: 3
+    platform_settings:
+        polarity: false
+    tags: lamps, gi
   l_right_lane_guide1:
     number: 4
+    platform_settings:
+        polarity: false
+    tags: lamps, gi
   l_right_lane_guide2:
     number: 5
+    platform_settings:
+        polarity: false
+    tags: lamps, gi
+  l_right_pop1:
+      number: 6
+      platform_settings:
+          polarity: false
+      tags: lamps, gi, popbumper
+  l_right_pop2:
+      number: 7
+      platform_settings:
+          polarity: false
+      tags: lamps, gi, popbumper
+  l_left_pop1:
+      number: 8
+      platform_settings:
+          polarity: false
+      tags: lamps, gi, popbumper
+  l_left_pop2:
+      number: 9
+      platform_settings:
+          polarity: false
+      tags: lamps, gi, popbumper
+  l_outpop:
+          number: 36
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, popbumper
+  l_right_cloud:
+      number: 10
+      platform_settings:
+          polarity: false
+      tags: lamps, gi
+  l_left_cloud:
+      number: 11
+      platform_settings:
+          polarity: false
+      tags: lamps, gi
+  l_left_moon1:
+        number: 12
+        platform_settings:
+            polarity: false
+        tags: lamps, gi
+  l_left_moon2:
+          number: 13
+          platform_settings:
+              polarity: false
+          tags: lamps, gi
+  l_right_bolt1:
+          number: 14
+          platform_settings:
+              polarity: false
+          tags: lamps, gi
+  l_right_bolt2:
+          number: 15
+          platform_settings:
+              polarity: false
+          tags: lamps, gi
+  l_'C'_chaos:
+          number: 16
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, c
+  l_'H'_chaos:
+        number: 17
+        platform_settings:
+            polarity: false
+        tags: lamps, gi, h
+  l_'O'_chaos:
+          number: 18
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, o
+  l_'S'_chaos:
+          number: 19
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, s
+  l_center_saucer:
+          number: 20
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, kicker
+  l_blackhole1:
+          number: 21
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, blackhole
+  l_blackhole2:
+          number: 22
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, blackhole
+  l_star_rollover1:
+          number: 23
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover2:
+          number: 24
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover3:
+          number: 25
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover4:
+          number: 26
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover5:
+          number: 27
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover6:
+        number: 28
+        platform_settings:
+            polarity: false
+        tags: lamps, gi, stars
+  l_star_rollover7:
+          number: 29
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover8:
+          number: 30
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover9:
+          number: 31
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover10:
+          number: 32
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover11:
+          number: 33
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover12:
+          number: 34
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
+  l_star_rollover13:
+          number: 35
+          platform_settings:
+              polarity: false
+          tags: lamps, gi, stars
 
 virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
 
 coils:
+  c_flipper_left_main:
+    number: 1
+    default_pulse_ms: 30
+  c_flipper_left_hold:
+    number: 2
+    allow_enable: true
+    default_hold_power: 1
+  c_flipper_right_main:
+    number: 3
+    default_pulse_ms: 30
+  c_flipper_right_hold:
+    number: 17
+    default_hold_power: 1
+  c_plunger:
+    number: 18
+    default_pulse_ms: 35
   c_trough_eject:
     number: 4
     default_pulse_ms: 20
-  c_scoop:
-    number: 5
-    default_pulse_ms: 12
-  c_lock:
-    number: 6
-    default_pulse_ms: 12
-  d_lock:
-    number: 7
-    default_pulse_ms: 12
   c_moon7_sling:
     number: 8
     default_pulse_ms: 10
@@ -146,22 +342,18 @@ coils:
   c_bolt2_sling:
     number: 11
     default_pulse_ms: 10
-  c_popbumperleft:
+  c_left_pop_bumper:
     number: 12
-    default_pulse_ms: 23
-  c_popbumperleft2:
+    default_pulse_ms: 15
+  c_left_pop_bumper2:
     number: 13
-    default_pulse_ms: 23
-  c_popbumperright:
+    default_pulse_ms: 15
+  c_right_pop_bumper:
     number: 14
-    default_pulse_ms: 23
-  c_popbumperright2:
+    default_pulse_ms: 15
+  c_right_pop_bumper2:
     number: 15
-    default_pulse_ms: 23
-  c_popbumperdrain:
-    number: 15
-    default_pulse_ms: 23
-
+    default_pulse_ms: 15
 autofire_coils:
   c_moon8_sling:
     coil: c_moon8_sling
