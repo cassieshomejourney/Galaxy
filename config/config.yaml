@@ -14,15 +14,11 @@ flippers:
     main_coil:
     hold_coil:
     activation_switch:
-    eos_switch:
-    label:
   lower_right:
     main_coil:
     hold_coil:
     activation_switch:
-    eos_switch:
-    label:
-
+      
 ball_devices:
   bd_trough:
     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam,
@@ -355,18 +351,18 @@ coils:
     number: 15
     default_pulse_ms: 15
 autofire_coils:
-  c_moon8_sling:
+  ac_moon8_sling:
     coil: c_moon8_sling
     switch: s_moon1_sling
-  c_moon7_sling:
+  ac_moon7_sling:
     coil: c_moon7_sling
     switch: s_moon2_sling
-  c_moon5_sling:
-    coil: c_moon5_sling
-    switch: s_moon3_sling
-  c_moon6_sling_sling:
-    coil: c_moon5_sling
-    switch: s_moon4_sling
+  ac_bolt_sling:
+    coil: c_bolt_sling
+    switch: s_bolt_sling
+  ac_bolt2_sling:
+    coil: c_bolt2_sling
+    switch: s_bolt2_sling
   ac_popbumper_left:
     coil: c_popbumperleft
     switch: s_popbumperleft
