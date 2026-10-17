@@ -27,6 +27,8 @@ keyboard:
         event: test_obstacle1
 modes:
   - base
+  - aliens
+  - eclipse
 
 flippers:
   left_flipper:
@@ -71,6 +73,9 @@ ball_devices:
 #   eject_timeouts: 1s
 
 switches:
+  s_scoop:
+    number: 26
+    tags: scoop
   s_start:
     number: 1
     tags: start
@@ -119,6 +124,9 @@ switches:
     tags: playfield_active
   s_left_inlane:
     number: 21
+    tags: playfield_active
+  s_right_inlane:
+    number: 25
     tags: playfield_active
   s_popbumperleft:
     number: 15
@@ -325,7 +333,354 @@ lights:
           platform_settings:
               polarity: false
           tags: lamps, gi, stars
-
+  l_left_strip1:
+          number: 36
+          platform_setting:
+               polarity: false
+          tags: left strip
+  l_left_strip2:
+          number: 37
+          platform_setting:
+                polarity: false
+          tags: left strip
+  l_left_strip3:
+            number: 38
+            platform_setting:
+                  polarity: false
+            tags: left strip
+  l_left_strip4:
+            number: 39
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip5:
+            number: 40
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip6:
+            number: 41
+            platform_setting:
+                  polarity: false
+                  tags: left strip
+  l_left_strip7:
+            number: 42
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip8:
+            number: 43
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip9:
+            number: 44
+            platform_setting:
+               polarity: false
+            tags: left strip
+  l_left_strip10:
+              number: 45
+              platform_setting:
+                   polarity: false
+              tags: left strip
+  l_left_strip11:
+              number: 46
+              platform_setting:
+                     polarity: false
+              tags: left strip
+  l_left_strip12:
+              number: 47
+              platform_setting:
+                    polarity: false
+              tags: left strip
+  l_left_strip13:
+              number: 48
+              platform_setting:
+                      polarity: false
+              tags: left strip
+  l_left_strip14:
+             number: 49
+             platform_setting:
+               polarity: false
+             tags: left strip
+  l_left_strip15:
+          number: 50
+          platform_setting:
+               polarity: false
+          tags: left strip
+  l_left_strip16:
+            number: 51
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip17:
+              number: 52
+              platform_setting:
+                   polarity: false
+              tags: left strip
+  l_left_strip18:
+              number: 53
+              platform_setting:
+                 polarity: false
+              tags: left strip
+  l_left_strip19:
+            number: 54
+            platform_setting:
+                polarity: false
+            tags: left strip
+  l_left_strip20:
+            number: 55
+            platform_setting:
+                polarity: false
+            tags: left strip
+  l_left_strip21:
+            number: 56
+            platform_setting:
+                 polarity: false
+            tags: left strip
+  l_left_strip22:
+            number: 57
+            platform_setting:
+                  polarity: false
+            tags: left strip
+  l_left_strip23:
+            number: 58
+            platform_setting:
+                    polarity: false
+            tags: left strip
+  l_left_strip24:
+              number: 59
+              platform_setting:
+                      polarity: false
+              tags: left strip
+  l_right_strip01:
+                number: 60
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip02:
+                number: 61
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip03:
+                number: 62
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip04:
+                number: 63
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip05:
+                number: 64
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip06:
+                number: 65
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip07:
+                number: 66
+                platform_setting:
+                        polarity: false
+                tags: right strip
+  l_right_strip08:
+              number: 67
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip09:
+              number: 68
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip10:
+              number: 69
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip11:
+              number: 70
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip12:
+              number: 71
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip13:
+              number: 72
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip14:
+              number: 73
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip15:
+              number: 74
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip16:
+              number: 75
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip17:
+              number: 76
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip18:
+              number: 77
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip19:
+              number: 78
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip20:
+              number: 79
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip21:
+              number: 80
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip22:
+              number: 81
+              platform_setting:
+                      polarity: false
+              tags: right
+  l_right_strip23:
+              number: 82
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_right_strip24:
+              number: 83
+              platform_setting:
+                      polarity: false
+              tags: right strip
+  l_drain:
+              number: 84
+              platform_setting:
+                  polarity: false
+              tags: lamps, apron
+  l_apron1:
+              number: 85
+              platform_setting:
+                  polarity: false
+              tags: lamp, apron
+  l_apron2:
+              number: 86
+              platform_setting:
+                    polarity: false
+              tags: lamp, apron
+  l_apron3:
+              number: 87
+              platform_setting:
+                    polarity: false
+              tags: lamp, apron
+  l_apron4:
+              number: 88
+              platform_setting:
+                    polarity: false
+              tags: lamp, apron
+  l_apron5:
+               number: 89
+               platform_setting:
+                     polarity: false
+               tags: lamp, apron
+  l_apron6:
+             number: 90
+             platform_setting:
+                   polarity: false
+             tags: lamp, apron
+  l_left_ballguide:
+            number: 91
+            platform_setting:
+                   polarity: false
+            tags: lamp, gi, ballguide
+  l_right_ballguide:
+            number: 92
+            platform_setting:
+                    polarity: false
+            tags: lamp, gi, ballguide
+  l_backbox_top1:
+            number: 93
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_top2:
+            number: 94
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_top3:
+            number: 95
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_top4:
+            number: 96
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_top5:
+           number: 97
+           tags: backbox
+           platform_setting:
+                  polarity: false
+  l_backbox_top6:
+            number: 98
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_top7:
+            number: 99
+            tags: backbox
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom1:
+            number: 100
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom2:
+            number: 101
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom3:
+            number: 102
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom4:
+            number: 103
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom5:
+            number: 104
+            platform_setting:
+                    polarity: false
+  l_backbox_bottom6:
+          number: 105
+          platform_setting:
+                  polarity: false
+  l_backbox_bottom7:
+            number: 106
+            platform_setting:
+                    polarity: false
 virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
 
 coils:
