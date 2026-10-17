@@ -2,6 +2,8 @@
 game:
   max_players: 4
 
+virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
+
 keyboard:
   s:
        switch: s_start
@@ -47,17 +49,18 @@ ball_devices:
   bd_trough:
     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam,
     eject_coil: c_trough_eject
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
     tags: trough, home, drain
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
-    eject_targets: bd_plunger
-    eject_timeouts: 3s
   bd_plunger:
     ball_switches: s_plunger
+    eject_: c_plunger
     mechanical_eject: true
-    eject_timeouts: 5s
+    eject_timeouts: 3s
   bd_scoop:
-    ball_switches: c_scoop
+    ball_switches: s_scoop
     eject_coil: c_scoop
     mechanical_eject: true
     eject_timeouts: 1s
@@ -151,6 +154,18 @@ switches:
   s_tilt:
     number: 24
     tags: tilt_bob
+  s_ship_lock:
+    number: 25
+  s_ship_lock2:
+    number: 26
+  s_ship_lock3:
+    number: 27
+
+drop_targets:
+  ship_lock:
+       switch: s_ship_lock
+       rest_coil: reset_drop_targets
+
 
 lights:
   l_shoot_again:
@@ -681,7 +696,6 @@ lights:
             number: 106
             platform_setting:
                     polarity: false
-virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
 
 coils:
   c_flipper_left_main:
