@@ -727,6 +727,38 @@ coils:
   c_right_pop_bumper2:
     number: 15
     default_pulse_ms: 15
+  c_gate:
+    number: 16
+    default_pulse_ms: 18
+    default_hold_power: "0.40"
+diverters:
+  ship_gate1:
+    activation_coil: c_gate
+    type: hold
+    activate_events: lock_light
+    deactivate_events:
+    enable_events: mode_base_started,
+    disable_events:
+    targets_when_active: bd_ship_lock
+    targets_when_inactive: bd_trough
+  ship_gate2:
+    activation_coil: c_gate2
+    type: hold
+    activate_events: lock_light
+    deactivate_events:
+    enable_events: mode_base_started,
+    disable_events:
+    targets_when_active: bd_ship_lock
+    targets_when_inactive: bd_trough
+  ship_gate3:
+    activation_coil: c_gate3
+    type: hold
+    activate_events: lock_light
+    deactivate_events:
+    enable_events: mode_base_started,
+    disable_events:
+    targets_when_active: bd_ship_lock
+    targets_when_inactive: bd_trough
 autofire_coils:
   ac_moon8_sling:
     coil: c_moon8_sling
