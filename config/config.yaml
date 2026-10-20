@@ -6,8 +6,6 @@ virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_troug
 
 modes:
   - base
-  - aliens
-  - eclipse
 
 flippers:
   left_flipper:
@@ -727,10 +725,10 @@ coils:
     number: 16
     default_pulse_ms: 18
     default_hold_power: "0.40"
-reset_drop_targets:
+  reset_drop_targets:
     number: 17
     default_pulse_ms: 15
-trip_drop_targets3:
+  trip_drop_targets3:
     number: 20
     default_pulse_ms: 15
 diverters:
