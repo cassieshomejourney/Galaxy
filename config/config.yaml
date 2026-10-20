@@ -730,10 +730,7 @@ coils:
 reset_drop_targets:
     number: 17
     default_pulse_ms: 15
-reset_drop_targets2:
-    number: 19
-    default_pulse_ms: 15
-reset_drop_targets3:
+trip_drop_targets3:
     number: 20
     default_pulse_ms: 15
 diverters:
