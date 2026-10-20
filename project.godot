@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Galaxy"
-run/main_scene="res://Slides/window_override.TSCN"
+run/main_scene="uid://bpvflcvlv42lc"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
