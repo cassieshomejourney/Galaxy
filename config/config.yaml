@@ -722,13 +722,21 @@ coils:
     number: 15
     default_pulse_ms: 15
   c_gate:
+    number: 21
+    default_pulse_ms: 18
+    default_hold_power: "0.40"
+  c_gate3:
+    number: 22
+    default_pulse_ms: 18
+    default_hold_power: "0.40"
+  c_gate2:
     number: 16
     default_pulse_ms: 18
     default_hold_power: "0.40"
   reset_drop_targets:
     number: 17
     default_pulse_ms: 15
-  trip_drop_targets3:
+  trip_drop_target_3:
     number: 20
     default_pulse_ms: 15
 diverters:
