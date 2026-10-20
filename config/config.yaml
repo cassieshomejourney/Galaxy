@@ -78,7 +78,7 @@ switches:
   s_trough5:
     number: 26
     type: NC
-  s_trough_6:
+  s_trough6:
     number: 27
     type: NC
   s_trough_jam:
