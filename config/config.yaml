@@ -770,16 +770,16 @@ autofire_coils:
     coil: c_bolt2_sling
     switch: s_bolt2_sling
   ac_popbumperleft:
-    coil: c_popbumperleft
+    coil: c_left_pop_bumper
     switch: s_popbumperleft
   ac_popbumperleft2:
-    coil: c_popbumperleft2
+    coil: c_left_pop_bumper2
     switch: s_popbumperleft2
   ac_popbumperright:
-    coil: c_popbumperright
+    coil: c_right_pop_bumper
     switch: s_popbumbperright
   ac_popbumperright2:
-    coil: c_popbumperright2
+    coil: c_right_pop_bumper2
     switch: s_popbumperright2
 
 playfields:
