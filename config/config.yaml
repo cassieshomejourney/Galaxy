@@ -142,10 +142,10 @@ drop_targets:
        reset_coil: reset_drop_targets
   ship_lock2:
        switch: s_ship_lock2
-       reset_coil: reset_drop_targets2
+       reset_coil: reset_drop_targets
   ship_lock3:
        switch: s_ship_lock3
-       reset_coil: reset_drop_targets3
+       reset_coil: trip_drop_target_3
 
 
 lights:
