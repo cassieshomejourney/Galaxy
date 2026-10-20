@@ -4,29 +4,6 @@ game:
 
 virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6
 
-keyboard:
-  s:
-    switch: s_start
-  c:
-    switch: s_cap1
-  b:
-    event: light_aliens
-  t:
-    event: test_light_show
-  e:
-    event: reset_eclipse
-  m:
-    event: test_blackhole
-  v:
-    event: start_video_mode
-  u:
-    switch: s_left_flipper
-  d:
-    switch: s_mag_button
-  f:
-    switch: s_right_flipper
-  o:
-    event: test_obstacle1
 modes:
   - base
   - aliens
@@ -163,6 +140,12 @@ drop_targets:
   ship_lock:
        switch: s_ship_lock
        reset_coil: reset_drop_targets
+  ship_lock2:
+       switch: s_ship_lock2
+       reset_coil: reset_drop_targets2
+  ship_lock3:
+       switch: s_ship_lock3
+       reset_coil: reset_drop_targets3
 
 
 lights:
@@ -747,6 +730,12 @@ coils:
 reset_drop_targets:
     number: 17
     default_pulse_ms: 15
+reset_drop_targets2:
+    number: 19
+    default_pulse_ms: 15
+reset_drop_targets3:
+    number: 20
+    default_pulse_ms: 15
 diverters:
   ship_gate1:
     activation_coil: c_gate
@@ -773,11 +762,11 @@ diverters:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
 autofire_coils:
-  ac_moon8_sling:
-    coil: c_moon8_sling
+  ac_moon1_sling:
+    coil: c_moon1_sling
     switch: s_moon1_sling
-  ac_moon7_sling:
-    coil: c_moon7_sling
+  ac_moon2_sling:
+    coil: c_moon2_sling
     switch: s_moon2_sling
   ac_bolt_sling:
     coil: c_bolt_sling
