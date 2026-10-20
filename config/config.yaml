@@ -75,6 +75,12 @@ switches:
   s_trough4:
     number: 7
     type: NC
+  s_trough5:
+    number: 26
+    type: NC
+  s_trough_6:
+    number: 27
+    type: NC
   s_trough_jam:
     number: 8
     type: NC
@@ -719,7 +725,10 @@ coils:
     default_pulse_ms: 15
   c_right_pop_bumper2:
     number: 15
-    default_pulse_ms: 15
+    default_pulse_ms: 1
+  c_lock:
+    number: 24
+    default_pulse_ms: 1
   c_scoop:
     number: 23
     default_pulse_ms: 15
@@ -740,6 +749,9 @@ coils:
     default_pulse_ms: 15
   trip_drop_target_3:
     number: 20
+    default_pulse_ms: 15
+  d_lock:
+    number: 25
     default_pulse_ms: 15
 diverters:
   ship_gate1:
