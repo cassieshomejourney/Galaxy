@@ -145,7 +145,6 @@ drop_targets:
        switch: s_ship_lock3
        reset_coil: trip_drop_target_3
 
-
 lights:
   l_shoot_again:
     number: 1
@@ -720,6 +719,9 @@ coils:
     default_pulse_ms: 15
   c_right_pop_bumper2:
     number: 15
+    default_pulse_ms: 15
+  c_scoop:
+    number: 23
     default_pulse_ms: 15
   c_gate:
     number: 21
