@@ -132,7 +132,6 @@ func _debug_mpf(exec: String, args: Array):
 	var output = []
 	OS.execute(exec, args, output, true)
 	self.log.error("Unable to start MPF:\n%s" % "\n".join(output))
-
 func _exit_tree():
 	if mpf_pid:
 		OS.execute("kill", [mpf_pid])
