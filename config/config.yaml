@@ -443,316 +443,315 @@ lights:
                   polarity: false
             tags: left strip
   l_left_strip23:
-            number: 58
-            platform_settings:
-                    polarity: false
-            tags: left strip
+    number: 58
+    platform_settings:
+         polarity: false
+    tags: left strip
   l_left_strip24:
-              number: 59
-              platform_settings:
-                      polarity: false
-              tags: left strip
+    number: 59
+    platform_settings:
+        polarity: false
+    tags: left strip
   l_right_strip01:
-                number: 60
-                platform_settings:
-                        polarity: false
-                tags: right strip
+    number: 60
+    platform_settings:
+        polarity: false
+    tags: right strip
   l_right_strip02:
-                number: 61
-                platform_settings:
-                        polarity: false
-                tags: right strip
+    number: 61
+    platform_settings:
+        polarity: false
+    tags: right strip
   l_right_strip03:
-                number: 62
-                platform_settings:
-                        polarity: false
-                tags: right strip
-  l_right_strip04:
-                number: 63
-                platform_settings:
-                        polarity: false
-                tags: right strip
-  l_right_strip05:
-                number: 64
-                platform_settings:
-                        polarity: false
-                tags: right strip
-  l_right_strip06:
-                number: 65
-                platform_settings:
-                        polarity: false
-                tags: right strip
-  l_right_strip07:
-                number: 66
-                platform_settings:
-                        polarity: false
-                tags: right strip
-  l_right_strip08:
-              number: 67
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip09:
-              number: 68
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip10:
-              number: 69
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip11:
-              number: 70
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip12:
-              number: 71
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip13:
-              number: 72
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip14:
-              number: 73
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip15:
-              number: 74
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip16:
-              number: 75
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip17:
-              number: 76
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip18:
-              number: 77
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip19:
-              number: 78
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip20:
-              number: 79
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip21:
-              number: 80
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip22:
-              number: 81
-              platform_settings:
-                      polarity: false
-              tags: right
-  l_right_strip23:
-              number: 82
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_right_strip24:
-              number: 83
-              platform_settings:
-                      polarity: false
-              tags: right strip
-  l_drain:
-              number: 84
-              platform_settings:
-                  polarity: false
-              tags: lamps, apron
-  l_apron1:
-              number: 85
-              platform_settings:
-                  polarity: false
-              tags: lamp, apron
-  l_apron2:
-              number: 86
-              platform_settings:
-                    polarity: false
-              tags: lamp, apron
-  l_apron3:
-              number: 87
-              platform_settings:
-                    polarity: false
-              tags: lamp, apron
-  l_apron4:
-              number: 88
-              platform_settings:
-                    polarity: false
-              tags: lamp, apron
-  l_apron5:
-               number: 89
-               platform_settings:
-                     polarity: false
-               tags: lamp, apron
-  l_apron6:
-             number: 90
-             platform_settings:
-                   polarity: false
-             tags: lamp, apron
-  l_left_ballguide:
-            number: 91
-            platform_settings:
-                   polarity: false
-            tags: lamp, gi, ballguide
-  l_right_ballguide:
-            number: 92
-            platform_settings:
-                    polarity: false
-            tags: lamp, gi, ballguide
-  l_backbox_top1:
-            number: 93
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_top2:
-            number: 94
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_top3:
-            number: 95
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_top4:
-            number: 96
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_top5:
-           number: 97
-           tags: backbox
-           platform_settings:
-                  polarity: false
-  l_backbox_top6:
-            number: 98
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_top7:
-            number: 99
-            tags: backbox
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom1:
-            number: 100
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom2:
-            number: 101
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom3:
-            number: 102
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom4:
-            number: 103
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom5:
-            number: 104
-            platform_settings:
-                    polarity: false
-  l_backbox_bottom6:
-          number: 105
-          platform_settings:
-                  polarity: false
-  l_backbox_bottom7:
-            number: 106
-            platform_settings:
-                    polarity: false
+  number: 6
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip04:
+  number: 63
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip05:
+  number: 64
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip06:
+  number: 65
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip07:
+  number: 66
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip08:
+  number: 67
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip09:
+  number: 68
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip10:
+  number: 69
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip11:
+  number: 70
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip12:
+  number: 71
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip13:
+  number: 72
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip14:
+  number: 73
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip15:
+  number: 74
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip16:
+  number: 75
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip17:
+  number: 76
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip18:
+  number: 77
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip19:
+  number: 78
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip20:
+  number: 79
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip21:
+  number: 80
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip22:
+  number: 81
+  platform_settings:
+    polarity: false
+  tags: right
+l_right_strip23:
+  number: 82
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip24:
+  number: 83
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_drain:
+  number: 84
+  platform_settings:
+    polarity: false
+  tags: lamps, apron
+l_apron1:
+  number: 85
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_apron2:
+  number: 86
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_apron3:
+  number: 87
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_apron4:
+  number: 88
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_apron5:
+  number: 89
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_apron6:
+  number: 90
+  platform_settings:
+    polarity: false
+  tags: lamp, apron
+l_left_ballguide:
+  number: 91
+  platform_settings:
+    polarity: false
+  tags: lamp, gi, ballguide
+l_right_ballguide:
+  number: 92
+  platform_settings:
+   polarity: false
+  tags: lamp, gi, ballguide
+l_backbox_top1:
+  number: 93
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top2:
+  number: 94
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top3:
+  number: 95
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top4:
+  number: 96
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top5:
+  number: 97
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top6:
+  number: 98
+  tags: backbox
+  platform_settings:
+    polarity: false
+l_backbox_top7:
+  number: 99
+  platform_settings:
+    polarity: false
+l_backbox_bottom1:
+  number: 100
+  platform_settings:
+    polarity: false
+l_backbox_bottom2:
+  number: 101
+  platform_settings:
+    polarity: false
+l_backbox_bottom3:
+  number: 102
+  platform_settings:
+    polarity: false
+l_backbox_bottom4:
+  number: 103
+  platform_settings:
+    polarity: false
+l_backbox_bottom5:
+  number: 104
+  platform_settings:
+    polarity: false
+l_backbox_bottom6:
+   number: 105
+   platform_settings:
+    polarity: false
+l_backbox_bottom7:
+  number: 106
+  platform_settings:
+    polarity: false
 
 coils:
-  c_flipper_left_main:
-    number: 1
-    default_pulse_ms: 30
-  c_flipper_left_hold:
-    number: 2
-    allow_enable: true
-    default_hold_power: 1
-  c_flipper_right_main:
-    number: 3
-    default_pulse_ms: 30
-  c_flipper_right_hold:
-    number: 17
-    allow_enable: true
-    default_hold_power: 1
-  c_plunger:
-    number: 18
-    default_pulse_ms: 35
-  c_trough_eject:
-    number: 4
-    default_pulse_ms: 20
-  c_moon1_sling:
-    number: 8
-    default_pulse_ms: 10
-  c_moon2_sling:
-    number: 9
-    default_pulse_ms: 10
-  c_bolt_sling:
-    number: 10
-    default_pulse_ms: 10
-  c_bolt2_sling:
-    number: 11
-    default_pulse_ms: 10
-  c_left_pop_bumper:
-    number: 12
-    default_pulse_ms: 15
-  c_left_pop_bumper2:
-    number: 13
-    default_pulse_ms: 15
-  c_right_pop_bumper:
-    number: 14
-    default_pulse_ms: 15
-  c_right_pop_bumper2:
-    number: 15
-    default_pulse_ms: 1
-  c_lock:
-    number: 24
-    default_pulse_ms: 1
-  c_scoop:
-    number: 23
-    default_pulse_ms: 15
-  c_gate:
-    number: 21
-    default_pulse_ms: 18
-    default_hold_power: "0.40"
-  c_gate3:
-    number: 22
-    default_pulse_ms: 18
-    default_hold_power: "0.40"
-  c_gate2:
-    number: 16
-    default_pulse_ms: 18
-    default_hold_power: "0.40"
-  reset_drop_targets:
-    number: 17
-    default_pulse_ms: 15
-  trip_drop_target_3:
-    number: 20
-    default_pulse_ms: 15
-  d_lock:
-    number: 25
-    default_pulse_ms: 15
+c_flipper_left_main:
+  number: 1
+  default_pulse_ms: 30
+c_flipper_left_hold:
+  number: 2
+  allow_enable: true
+  default_hold_power: 1
+c_flipper_right_main:
+  number: 3
+  default_pulse_ms: 30
+c_flipper_right_hold:
+  number: 17
+  allow_enable: true
+  default_hold_power: 1
+c_plunger:
+  number: 18
+  default_pulse_ms: 35
+c_trough_eject:
+  number: 4
+  default_pulse_ms: 20
+c_moon1_sling:
+  number: 8
+  default_pulse_ms: 10
+c_moon2_sling:
+  number: 9
+  default_pulse_ms: 10
+c_bolt_sling:
+  number: 10
+  default_pulse_ms: 10
+c_bolt2_sling:
+  number: 11
+  default_pulse_ms: 10
+c_left_pop_bumper:
+  number: 12
+  default_pulse_ms: 15
+c_left_pop_bumper2:
+  number: 13
+  default_pulse_ms: 15
+c_right_pop_bumper:
+  number: 14
+  default_pulse_ms: 15
+c_right_pop_bumper2:
+  number: 15
+  default_pulse_ms: 1
+c_lock:
+  number: 24
+  default_pulse_ms: 1
+c_scoop:
+  number: 23
+  default_pulse_ms: 15
+c_gate:
+  number: 21
+  default_pulse_ms: 18
+  default_hold_power: "0.40"
+c_gate3:
+  number: 22
+  default_pulse_ms: 18
+  default_hold_power: "0.40"
+c_gate2:
+  number: 16
+  default_pulse_ms: 18
+  default_hold_power: "0.40"
+reset_drop_targets:
+  number: 17
+  default_pulse_ms: 15
+trip_drop_target_3:
+  number: 20
+  default_pulse_ms: 15
+d_lock:
+  number: 25
+  default_pulse_ms: 15
 diverters:
   ship_gate1:
     activation_coil: c_gate
@@ -811,5 +810,3 @@ playfields:
     enable_ball_search: true
     ball_search_timeout: 15ms
     ball_search_wait_after_iteration: 250ms
-gmc:
-  executable: /full/path/to/Godot
