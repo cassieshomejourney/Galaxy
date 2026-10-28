@@ -6,22 +6,21 @@ virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_troug
 
 modes:
   - base
-
 flippers:
-left_flipper:
+ left_flipper:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
     enable_events: ball_started
     disable_events: ball_ending
-right_flipper:
+ right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     enable_events: ball_started
     disable_events: ball_ending
 ball_devices:
-bd_trough:
+ bd_trough:
     ball_switches: s_trough1 s_trough2 s_trough3 s_trough4 s_trough5 s_trough6 s_trough_jam
     eject_coil: c_trough_eject
     eject_targets: bd_plunger
@@ -29,155 +28,154 @@ bd_trough:
     tags: trough, home, drain
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
-bd_plunger:
+ bd_plunger:
     ball_switches: s_plunger
     eject_coil: c_plunger
     mechanical_eject: false
     eject_timeouts: 3s
-bd_scoop:
+ bd_scoop:
     ball_switches: s_scoop
     eject_coil: c_scoop
     mechanical_eject: false
     eject_timeouts: 1s
-bd_ship_lock:
+ bd_ship_lock:
     ball_switches: s_ship_lock1, s_ship_lock2, s_ship_lock3
     eject_coil: c_lock
 #   eject_timeouts: 1s
-bd_lock2:
+ bd_lock2:
     ball_switches: d_lock4, d_lock5, d_lock6
     eject_coil: d_lock
 #   eject_timeouts: 1s
 
 switches:
-s_scoop:
+ s_scoop:
     number: 26
     tags: scoop
-s_start:
+ s_start:
     number: 1
     tags: start
-s_shooter_lane:
+ s_shooter_lane:
     number: 190
-s_left_flipper:
+ s_left_flipper:
     number: 2
     tags: left_flipper
-s_right_flipper:
+ s_right_flipper:
     number: 3
     tags: right_flipper
-s_trough1:
+ s_trough1:
     number: 4
     type: NC
-s_trough2:
+ s_trough2:
     number: 5
     type: NC
-s_trough3:
+ s_trough3:
     number: 6
     type: NC
-s_trough4:
+ s_trough4:
     number: 7
     type: NC
-s_trough5:
+ s_trough5:
     number: 26
     type: NC
-s_trough6:
+ s_trough6:
     number: 27
     type: NC
-s_trough_jam:
+ s_trough_jam:
     number: 8
     type: NC
-s_plunger:
+ s_plunger:
     number: 10
-s_moon1_sling:
+ s_moon1_sling:
     number: 11
     type: NC
-s_moon2_sling:
+ s_moon2_sling:
     number: 12
     type: NC
-s_bolt_sling:
+ s_bolt_sling:
     number: 13
     type: NC
-s_bolt2_sling:
+ s_bolt2_sling:
     number: 14
     type: NC
-s_r_outlane:
+ s_r_outlane:
     number: 19
     tags: playfield_active
-s_left_outline:
+ s_left_outline:
     number: 20
     tags: playfield_active
-s_left_inlane:
+ s_left_inlane:
     number: 21
     tags: playfield_active
-s_right_inlane:
+ s_right_inlane:
     number: 25
     tags: playfield_active
-s_popbumperleft:
+ s_popbumperleft:
     number: 15
     type: NC
-s_popbumperleft2:
+ s_popbumperleft2:
     number: 16
     type: NC
-s_popbumbperright:
+ s_popbumbperright:
     number: 17
     type: NC
-s_popbumperright2:
+ s_popbumperright2:
     number: 18
     type: NC
-s_right_ramp:
+ s_right_ramp:
     number: 22
     tags: playfield_active
     type: NC
-s_star_slide:
+ s_star_slide:
     number: 23
     type: NC
     tags: ramp
-s_tilt:
+ s_tilt:
     number: 24
     tags: tilt_bob
-s_ship_lock:
+ s_ship_lock:
     number: 28
-s_ship_lock2:
+ s_ship_lock2:
     number: 29
-s_ship_lock3:
+ s_ship_lock3:
     number: 27
-
 drop_targets:
-ship_lock:
+ ship_lock:
        switch: s_ship_lock
        reset_coil: reset_drop_targets
-ship_lock2:
+ ship_lock2:
        switch: s_ship_lock2
        reset_coil: reset_drop_targets
-ship_lock3:
+ ship_lock3:
        switch: s_ship_lock3
        reset_coil: trip_drop_target_3
 
 lights:
-l_shoot_again:
+ l_shoot_again:
   number: 1
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_left_lane_guide1:
+ l_left_lane_guide1:
   number: 2
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_left_lane_guide2:
+ l_left_lane_guide2:
   number: 3
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_right_lane_guide1:
+ l_right_lane_guide1:
   number: 4
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_right_lane_guide2:
+ l_right_lane_guide2:
   number: 5
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_right_pop1:
+ l_right_pop1:
   number: 6
   platform_settings:
     polarity: false
@@ -681,79 +679,79 @@ l_backbox_bottom7:
     polarity: false
 
 coils:
-c_flipper_left_main:
+ c_flipper_left_main:
   number: 1
   default_pulse_ms: 30
-c_flipper_left_hold:
+ c_flipper_left_hold:
   number: 2
   allow_enable: true
   default_hold_power: 1
-c_flipper_right_main:
+ c_flipper_right_main:
   number: 3
   default_pulse_ms: 30
-c_flipper_right_hold:
+ c_flipper_right_hold:
   number: 17
   allow_enable: true
   default_hold_power: 1
-c_plunger:
+ c_plunger:
   number: 18
   default_pulse_ms: 35
-c_trough_eject:
+ c_trough_eject:
   number: 4
   default_pulse_ms: 20
-c_moon1_sling:
+ c_moon1_sling:
   number: 8
   default_pulse_ms: 10
-c_moon2_sling:
+ c_moon2_sling:
   number: 9
   default_pulse_ms: 10
-c_bolt_sling:
+ c_bolt_sling:
   number: 10
   default_pulse_ms: 10
-c_bolt2_sling:
+ c_bolt2_sling:
   number: 11
   default_pulse_ms: 10
-c_left_pop_bumper:
+ c_left_pop_bumper:
   number: 12
   default_pulse_ms: 15
-c_left_pop_bumper2:
+ c_left_pop_bumper2:
   number: 13
   default_pulse_ms: 15
-c_right_pop_bumper:
+ c_right_pop_bumper:
   number: 14
   default_pulse_ms: 15
-c_right_pop_bumper2:
+ c_right_pop_bumper2:
   number: 15
   default_pulse_ms: 1
-c_lock:
+ c_lock:
   number: 24
   default_pulse_ms: 1
-c_scoop:
+ c_scoop:
   number: 23
   default_pulse_ms: 15
-c_gate:
+ c_gate:
   number: 21
   default_pulse_ms: 18
   default_hold_power: "0.40"
-c_gate3:
+ c_gate3:
   number: 22
   default_pulse_ms: 18
   default_hold_power: "0.40"
-c_gate2:
+ c_gate2:
   number: 16
   default_pulse_ms: 18
   default_hold_power: "0.40"
-reset_drop_targets:
+ reset_drop_targets:
   number: 17
   default_pulse_ms: 15
-trip_drop_target_3:
+ trip_drop_target_3:
   number: 20
   default_pulse_ms: 15
-d_lock:
+ d_lock:
   number: 25
   default_pulse_ms: 15
 diverters:
-ship_gate1:
+ ship_gate1:
     activation_coil: c_gate
     type: hold
     activate_events: lock_light
@@ -761,7 +759,7 @@ ship_gate1:
     disable_events:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
-ship_gate2:
+ ship_gate2:
     activation_coil: c_gate2
     type: hold
     activate_events: lock_light
@@ -769,7 +767,7 @@ ship_gate2:
     disable_events:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
-ship_gate3:
+ ship_gate3:
     activation_coil: c_gate3
     type: hold
     activate_events: lock_light
@@ -778,28 +776,28 @@ ship_gate3:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
 autofire_coils:
-ac_moon1_sling:
+ ac_moon1_sling:
     coil: c_moon1_sling
     switch: s_moon1_sling
-ac_moon2_sling:
+ ac_moon2_sling:
     coil: c_moon2_sling
     switch: s_moon2_sling
-ac_bolt_sling:
+ ac_bolt_sling:
     coil: c_bolt_sling
     switch: s_bolt_sling
-ac_bolt2_sling:
+ ac_bolt2_sling:
     coil: c_bolt2_sling
     switch: s_bolt2_sling
-ac_popbumperleft:
+ ac_popbumperleft:
     coil: c_left_pop_bumper
     switch: s_popbumperleft
-ac_popbumperleft2:
+ ac_popbumperleft2:
     coil: c_left_pop_bumper2
     switch: s_popbumperleft2
-ac_popbumperright:
+ ac_popbumperright:
     coil: c_right_pop_bumper
     switch: s_popbumbperright
-ac_popbumperright2:
+ ac_popbumperright2:
     coil: c_right_pop_bumper2
     switch: s_popbumperright2
 
