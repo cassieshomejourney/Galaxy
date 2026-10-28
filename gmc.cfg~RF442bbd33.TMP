@@ -1,0 +1,29 @@
+[sound_system]
+
+music={
+"type": "solo"
+}
+effects={
+"default": true,
+"simultaneous_sounds": 3,
+"type": "simultaneous"
+}
+voice={
+"type": "sequential"
+}
+
+[filter]
+
+filter="virtual_dmd"
+columns=120
+rows=45
+hardness=5
+spacing=2
+
+[mpf]
+
+executable_path="C:\\Users\\cassafrass\\AppData\\Local\\Programs\\Python\\Python313\\Scripts/mpf.exe"
+mpf_args="-X"
+virtual=true
+verbose=true
+spawn_mpf=true

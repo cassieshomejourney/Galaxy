@@ -40,6 +40,10 @@ run/main_run_args="gmc"
 
 enabled=PackedStringArray("res://addons/mpf-gmc/plugin.cfg")
 
+[gui]
+
+theme/custom_font="uid://brvhyxnt57u6p"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

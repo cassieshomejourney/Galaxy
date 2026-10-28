@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://bchuhp8jyuidt"]
 
-[node name="Node2D" type="Node2D" unique_id=874335554]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_gensg"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="2_rqxsl"]
+
+[node name="MPFSlide" type="Control" unique_id=529465503]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_gensg")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="." unique_id=708069161]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_rqxsl")
+metadata/_custom_type_script = "uid://bov7mrgxslshq"
