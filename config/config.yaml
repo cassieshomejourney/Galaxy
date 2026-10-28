@@ -8,20 +8,20 @@ modes:
   - base
 
 flippers:
-  left_flipper:
+left_flipper:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
     enable_events: ball_started
     disable_events: ball_ending
-  right_flipper:
+right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
     enable_events: ball_started
     disable_events: ball_ending
 ball_devices:
-  bd_trough:
+bd_trough:
     ball_switches: s_trough1 s_trough2 s_trough3 s_trough4 s_trough5 s_trough6 s_trough_jam
     eject_coil: c_trough_eject
     eject_targets: bd_plunger
@@ -29,440 +29,440 @@ ball_devices:
     tags: trough, home, drain
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
-  bd_plunger:
+bd_plunger:
     ball_switches: s_plunger
     eject_coil: c_plunger
     mechanical_eject: false
     eject_timeouts: 3s
-  bd_scoop:
+bd_scoop:
     ball_switches: s_scoop
     eject_coil: c_scoop
     mechanical_eject: false
     eject_timeouts: 1s
-  bd_ship_lock:
+bd_ship_lock:
     ball_switches: s_ship_lock1, s_ship_lock2, s_ship_lock3
     eject_coil: c_lock
 #   eject_timeouts: 1s
-  bd_lock2:
+bd_lock2:
     ball_switches: d_lock4, d_lock5, d_lock6
     eject_coil: d_lock
 #   eject_timeouts: 1s
 
 switches:
-  s_scoop:
+s_scoop:
     number: 26
     tags: scoop
-  s_start:
+s_start:
     number: 1
     tags: start
-  s_shooter_lane:
+s_shooter_lane:
     number: 190
-  s_left_flipper:
+s_left_flipper:
     number: 2
     tags: left_flipper
-  s_right_flipper:
+s_right_flipper:
     number: 3
     tags: right_flipper
-  s_trough1:
+s_trough1:
     number: 4
     type: NC
-  s_trough2:
+s_trough2:
     number: 5
     type: NC
-  s_trough3:
+s_trough3:
     number: 6
     type: NC
-  s_trough4:
+s_trough4:
     number: 7
     type: NC
-  s_trough5:
+s_trough5:
     number: 26
     type: NC
-  s_trough6:
+s_trough6:
     number: 27
     type: NC
-  s_trough_jam:
+s_trough_jam:
     number: 8
     type: NC
-  s_plunger:
+s_plunger:
     number: 10
-  s_moon1_sling:
+s_moon1_sling:
     number: 11
     type: NC
-  s_moon2_sling:
+s_moon2_sling:
     number: 12
     type: NC
-  s_bolt_sling:
+s_bolt_sling:
     number: 13
     type: NC
-  s_bolt2_sling:
+s_bolt2_sling:
     number: 14
     type: NC
-  s_r_outlane:
+s_r_outlane:
     number: 19
     tags: playfield_active
-  s_left_outline:
+s_left_outline:
     number: 20
     tags: playfield_active
-  s_left_inlane:
+s_left_inlane:
     number: 21
     tags: playfield_active
-  s_right_inlane:
+s_right_inlane:
     number: 25
     tags: playfield_active
-  s_popbumperleft:
+s_popbumperleft:
     number: 15
     type: NC
-  s_popbumperleft2:
+s_popbumperleft2:
     number: 16
     type: NC
-  s_popbumbperright:
+s_popbumbperright:
     number: 17
     type: NC
-  s_popbumperright2:
+s_popbumperright2:
     number: 18
     type: NC
-  s_right_ramp:
+s_right_ramp:
     number: 22
     tags: playfield_active
     type: NC
-  s_star_slide:
+s_star_slide:
     number: 23
     type: NC
     tags: ramp
-  s_tilt:
+s_tilt:
     number: 24
     tags: tilt_bob
-  s_ship_lock:
+s_ship_lock:
     number: 28
-  s_ship_lock2:
+s_ship_lock2:
     number: 29
-  s_ship_lock3:
+s_ship_lock3:
     number: 27
 
 drop_targets:
-  ship_lock:
+ship_lock:
        switch: s_ship_lock
        reset_coil: reset_drop_targets
-  ship_lock2:
+ship_lock2:
        switch: s_ship_lock2
        reset_coil: reset_drop_targets
-  ship_lock3:
+ship_lock3:
        switch: s_ship_lock3
        reset_coil: trip_drop_target_3
 
 lights:
-  l_shoot_again:
-    number: 1
-    platform_settings:
-        polarity: false
-    tags: lamps, gi
-  l_left_lane_guide1:
-    number: 2
-    platform_settings:
-        polarity: false
-    tags: lamps, gi
-  l_left_lane_guide2:
-    number: 3
-    platform_settings:
-        polarity: false
-    tags: lamps, gi
-  l_right_lane_guide1:
-    number: 4
-    platform_settings:
-        polarity: false
-    tags: lamps, gi
-  l_right_lane_guide2:
-    number: 5
-    platform_settings:
-        polarity: false
-    tags: lamps, gi
-  l_right_pop1:
-      number: 6
-      platform_settings:
-          polarity: false
-      tags: lamps, gi, popbumper
-  l_right_pop2:
-      number: 7
-      platform_settings:
-          polarity: false
-      tags: lamps, gi, popbumper
-  l_left_pop1:
-      number: 8
-      platform_settings:
-          polarity: false
-      tags: lamps, gi, popbumper
-  l_left_pop2:
-      number: 9
-      platform_settings:
-          polarity: false
-      tags: lamps, gi, popbumper
-  l_outpop:
-      number: 36
-      platform_settings:
-          polarity: false
-      tags: lamps, gi, popbumper
-  l_right_cloud:
-      number: 10
-      platform_settings:
-          polarity: false
-      tags: lamps, gi
-  l_left_cloud:
-      number: 11
-      platform_settings:
-          polarity: false
-      tags: lamps, gi
-  l_left_moon1:
-        number: 12
-        platform_settings:
-            polarity: false
-        tags: lamps, gi
-  l_left_moon2:
-          number: 13
-          platform_settings:
-              polarity: false
-          tags: lamps, gi
-  l_right_bolt1:
-          number: 14
-          platform_settings:
-              polarity: false
-          tags: lamps, gi
-  l_right_bolt2:
-          number: 15
-          platform_settings:
-              polarity: false
-          tags: lamps, gi
-  l_'c'_chaos:
-          number: 16
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, c
-  l_'h'_chaos:
-        number: 17
-        platform_settings:
-            polarity: false
-        tags: lamps, gi, h
-  l_'o'_chaos:
-          number: 18
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, o
-  l_'s'_chaos:
-          number: 19
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, s
-  l_center_saucer:
-          number: 20
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, kicker
-  l_blackhole1:
-          number: 21
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, blackhole
-  l_blackhole2:
-          number: 22
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, blackhole
-  l_star_rollover1:
-          number: 23
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover2:
-          number: 24
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover3:
-          number: 25
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover4:
-          number: 26
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover5:
-          number: 27
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover6:
-        number: 28
-        platform_settings:
-            polarity: false
-        tags: lamps, gi, stars
-  l_star_rollover7:
-          number: 29
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover8:
-          number: 30
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover9:
-          number: 31
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover10:
-          number: 32
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover11:
-          number: 33
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover12:
-          number: 34
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_star_rollover13:
-          number: 35
-          platform_settings:
-              polarity: false
-          tags: lamps, gi, stars
-  l_left_strip1:
-          number: 36
-          platform_settings:
-               polarity: false
-          tags: left strip
-  l_left_strip2:
-          number: 37
-          platform_settings:
-                polarity: false
-          tags: left strip
-  l_left_strip3:
-            number: 38
-            platform_settings:
-                  polarity: false
-            tags: left strip
-  l_left_strip4:
-            number: 39
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip5:
-            number: 40
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip6:
-            number: 41
-            platform_settings:
-                  polarity: false
-            tags: left strip
-  l_left_strip7:
-            number: 42
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip8:
-            number: 43
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip9:
-            number: 44
-            platform_settings:
-               polarity: false
-            tags: left strip
-  l_left_strip10:
-              number: 45
-              platform_settings:
-                   polarity: false
-              tags: left strip
-  l_left_strip11:
-              number: 46
-              platform_settings:
-                     polarity: false
-              tags: left strip
-  l_left_strip12:
-              number: 47
-              platform_settings:
-                    polarity: false
-              tags: left strip
-  l_left_strip13:
-              number: 48
-              platform_settings:
-                    polarity: false
-              tags: left strip
-  l_left_strip14:
-             number: 49
-             platform_settings:
-               polarity: false
-             tags: left strip
-  l_left_strip15:
-          number: 50
-          platform_settings:
-               polarity: false
-          tags: left strip
-  l_left_strip16:
-            number: 51
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip17:
-              number: 52
-              platform_settings:
-                   polarity: false
-              tags: left strip
-  l_left_strip18:
-              number: 53
-              platform_settings:
-                 polarity: false
-              tags: left strip
-  l_left_strip19:
-            number: 54
-            platform_settings:
-                polarity: false
-            tags: left strip
-  l_left_strip20:
-            number: 55
-            platform_settings:
-                polarity: false
-            tags: left strip
-  l_left_strip21:
-            number: 56
-            platform_settings:
-                 polarity: false
-            tags: left strip
-  l_left_strip22:
-            number: 57
-            platform_settings:
-                  polarity: false
-            tags: left strip
-  l_left_strip23:
-    number: 58
-    platform_settings:
-         polarity: false
-    tags: left strip
-  l_left_strip24:
-    number: 59
-    platform_settings:
-        polarity: false
-    tags: left strip
-  l_right_strip01:
-    number: 60
-    platform_settings:
-        polarity: false
-    tags: right strip
-  l_right_strip02:
-    number: 61
-    platform_settings:
-        polarity: false
-    tags: right strip
-  l_right_strip03:
+l_shoot_again:
+  number: 1
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_left_lane_guide1:
+  number: 2
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_left_lane_guide2:
+  number: 3
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_right_lane_guide1:
+  number: 4
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_right_lane_guide2:
+  number: 5
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_right_pop1:
+  number: 6
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, popbumper
+l_right_pop2:
+  number: 7
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, popbumper
+l_left_pop1:
+  number: 8
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, popbumper
+l_left_pop2:
+  number: 9
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, popbumper
+l_outpop:
+  number: 36
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, popbumper
+l_right_cloud:
+  number: 10
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_left_cloud:
+  number: 11
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_left_moon1:
+  number: 12
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_left_moon2:
+  number: 13
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_right_bolt1:
+  number: 14
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_right_bolt2:
+  number: 15
+  platform_settings:
+    polarity: false
+  tags: lamps, gi
+l_'c'_chaos:
+  number: 16
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, c
+l_'h'_chaos:
+  number: 17
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, h
+l_'o'_chaos:
+  number: 18
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, o
+l_'s'_chaos:
+  number: 19
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, s
+l_center_saucer:
+  number: 20
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, kicker
+l_blackhole1:
+  number: 21
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, blackhole
+l_blackhole2:
+  number: 22
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, blackhole
+l_star_rollover1:
+  number: 23
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover2:
+  number: 24
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover3:
+  number: 25
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover4:
+  number: 26
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover5:
+  number: 27
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover6:
+  number: 28
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover7:
+  number: 29
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover8:
+  number: 30
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover9:
+  number: 31
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover10:
+  number: 32
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover11:
+  number: 33
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover12:
+  number: 34
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_star_rollover13:
+  number: 35
+  platform_settings:
+    polarity: false
+  tags: lamps, gi, stars
+l_left_strip1:
+  number: 36
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip2:
+  number: 37
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip3:
+  number: 38
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip4:
+  number: 39
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip5:
+  number: 40
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip6:
+  number: 41
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip7:
+  number: 42
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip8:
+  number: 43
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip9:
+  number: 44
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip10:
+  number: 45
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip11:
+  number: 46
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip12:
+  number: 47
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip13:
+  number: 48
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip14:
+  number: 49
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip15:
+  number: 50
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip16:
+  number: 51
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip17:
+  number: 52
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip18:
+  number: 53
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip19:
+  number: 54
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip20:
+  number: 55
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip21:
+  number: 56
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip22:
+  number: 57
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip23:
+  number: 58
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_left_strip24:
+  number: 59
+  platform_settings:
+    polarity: false
+  tags: left strip
+l_right_strip01:
+  number: 60
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip02:
+  number: 61
+  platform_settings:
+    polarity: false
+  tags: right strip
+l_right_strip03:
   number: 6
   platform_settings:
     polarity: false
@@ -753,7 +753,7 @@ d_lock:
   number: 25
   default_pulse_ms: 15
 diverters:
-  ship_gate1:
+ship_gate1:
     activation_coil: c_gate
     type: hold
     activate_events: lock_light
@@ -761,7 +761,7 @@ diverters:
     disable_events:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
-  ship_gate2:
+ship_gate2:
     activation_coil: c_gate2
     type: hold
     activate_events: lock_light
@@ -769,7 +769,7 @@ diverters:
     disable_events:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
-  ship_gate3:
+ship_gate3:
     activation_coil: c_gate3
     type: hold
     activate_events: lock_light
@@ -778,28 +778,28 @@ diverters:
     targets_when_active: bd_ship_lock
     targets_when_inactive: bd_trough
 autofire_coils:
-  ac_moon1_sling:
+ac_moon1_sling:
     coil: c_moon1_sling
     switch: s_moon1_sling
-  ac_moon2_sling:
+ac_moon2_sling:
     coil: c_moon2_sling
     switch: s_moon2_sling
-  ac_bolt_sling:
+ac_bolt_sling:
     coil: c_bolt_sling
     switch: s_bolt_sling
-  ac_bolt2_sling:
+ac_bolt2_sling:
     coil: c_bolt2_sling
     switch: s_bolt2_sling
-  ac_popbumperleft:
+ac_popbumperleft:
     coil: c_left_pop_bumper
     switch: s_popbumperleft
-  ac_popbumperleft2:
+ac_popbumperleft2:
     coil: c_left_pop_bumper2
     switch: s_popbumperleft2
-  ac_popbumperright:
+ac_popbumperright:
     coil: c_right_pop_bumper
     switch: s_popbumbperright
-  ac_popbumperright2:
+ac_popbumperright2:
     coil: c_right_pop_bumper2
     switch: s_popbumperright2
 
