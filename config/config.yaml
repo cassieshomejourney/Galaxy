@@ -180,152 +180,152 @@ lights:
   platform_settings:
     polarity: false
   tags: lamps, gi, popbumper
-l_right_pop2:
+ l_right_pop2:
   number: 7
   platform_settings:
     polarity: false
   tags: lamps, gi, popbumper
-l_left_pop1:
+ l_popbumperright2:
   number: 8
   platform_settings:
     polarity: false
   tags: lamps, gi, popbumper
-l_left_pop2:
+ l_left_pop2:
   number: 9
   platform_settings:
     polarity: false
   tags: lamps, gi, popbumper
-l_outpop:
+ l_outpop:
   number: 36
   platform_settings:
     polarity: false
   tags: lamps, gi, popbumper
-l_right_cloud:
+ l_right_cloud:
   number: 10
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_left_cloud:
+ l_left_cloud:
   number: 11
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_left_moon1:
+ l_left_moon1:
   number: 12
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_left_moon2:
+ l_left_moon2:
   number: 13
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_right_bolt1:
+ l_right_bolt1:
   number: 14
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_right_bolt2:
+ l_right_bolt2:
   number: 15
   platform_settings:
     polarity: false
   tags: lamps, gi
-l_'c'_chaos:
+ l_'c'_chaos:
   number: 16
   platform_settings:
     polarity: false
   tags: lamps, gi, c
-l_'h'_chaos:
+ l_'h'_chaos:
   number: 17
   platform_settings:
     polarity: false
   tags: lamps, gi, h
-l_'o'_chaos:
+ l_'o'_chaos:
   number: 18
   platform_settings:
     polarity: false
   tags: lamps, gi, o
-l_'s'_chaos:
+ l_'s'_chaos:
   number: 19
   platform_settings:
     polarity: false
   tags: lamps, gi, s
-l_center_saucer:
+ l_center_saucer:
   number: 20
   platform_settings:
     polarity: false
   tags: lamps, gi, kicker
-l_blackhole1:
+ l_blackhole1:
   number: 21
   platform_settings:
     polarity: false
   tags: lamps, gi, blackhole
-l_blackhole2:
+ l_blackhole2:
   number: 22
   platform_settings:
     polarity: false
   tags: lamps, gi, blackhole
-l_star_rollover1:
+ l_star_rollover1:
   number: 23
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover2:
+ l_star_rollover2:
   number: 24
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover3:
+ l_star_rollover3:
   number: 25
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover4:
+ l_star_rollover4:
   number: 26
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover5:
+ l_star_rollover5:
   number: 27
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover6:
+ l_star_rollover6:
   number: 28
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover7:
+ l_star_rollover7:
   number: 29
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover8:
+ l_star_rollover8:
   number: 30
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover9:
+ l_star_rollover9:
   number: 31
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover10:
+ l_star_rollover10:
   number: 32
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover11:
+ l_star_rollover11:
   number: 33
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover12:
+ l_star_rollover12:
   number: 34
   platform_settings:
     polarity: false
   tags: lamps, gi, stars
-l_star_rollover13:
+ l_star_rollover13:
   number: 35
   platform_settings:
     polarity: false
