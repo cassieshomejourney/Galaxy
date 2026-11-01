@@ -1,3 +1,23 @@
 #config_version=6
+mode_settings:
+  selectable_items:
+    -companies
+    -dspc_animation.ogv.uid
+  next_item_events: s_right_flipper
+  previous_items_events: s_left_flipper
+  select_item_events: s_start_active
+
+widget_player:
+  mode_attract_started: press_start
+event_player:
+  s_start_active: sw_add_player
+counters:
+  attract_theme_once:
+    count_events: carousel_item_highlighter{carousel == "attract" and item =="cosmic intro"}
+    count_complete_value: 1
+    events_when_complete: play_attract_theme
+    disable_on_complete: true
+    reset_events: mode_attract_started
+
 slide_player:
   mode_attract_started: attract
