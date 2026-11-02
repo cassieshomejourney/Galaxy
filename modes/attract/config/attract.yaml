@@ -20,13 +20,6 @@ counters:
 slide_player:
   mode_attract_started: attract
 
-show_player:
-  mode_attract_started:
-    attract_bright:
-      key: attract_lights
-      loops: -1
-      speed: 4
-
 timers:
   attract_switch:
     end_value: 1
