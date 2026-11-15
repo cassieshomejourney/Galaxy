@@ -753,54 +753,54 @@ coils:
   default_pulse_ms: 15
 diverters:
  ship_gate1:
-    activation_coil: c_gate
-    type: hold
-    activate_events: lock_light
-    deactivate_events:
-    disable_events:
-    targets_when_active: bd_ship_lock
-    targets_when_inactive: bd_trough
+  activation_coil: c_gate
+  type: hold
+  activate_events: lock_light
+  deactivate_events:
+  disable_events:
+  targets_when_active: bd_ship_lock
+  targets_when_inactive: bd_trough
  ship_gate2:
-    activation_coil: c_gate2
-    type: hold
-    activate_events: lock_light
-    deactivate_events:
-    disable_events:
-    targets_when_active: bd_ship_lock
-    targets_when_inactive: bd_trough
+  activation_coil: c_gate2
+  type: hold
+  activate_events: lock_light
+  deactivate_events:
+  disable_events:
+  targets_when_active: bd_ship_lock
+  targets_when_inactive: bd_trough
  ship_gate3:
-    activation_coil: c_gate3
-    type: hold
-    activate_events: lock_light
-    deactivate_events:
-    disable_events:
-    targets_when_active: bd_ship_lock
-    targets_when_inactive: bd_trough
+  activation_coil: c_gate3
+  type: hold
+  activate_events: lock_light
+  deactivate_events:
+  disable_events:
+  targets_when_active: bd_ship_lock
+  targets_when_inactive: bd_trough
 autofire_coils:
  ac_moon1_sling:
-    coil: c_moon1_sling
-    switch: s_moon1_sling
+  coil: c_moon1_sling
+  switch: s_moon1_sling
  ac_moon2_sling:
-    coil: c_moon2_sling
-    switch: s_moon2_sling
+  coil: c_moon2_sling
+  switch: s_moon2_sling
  ac_bolt_sling:
-    coil: c_bolt_sling
-    switch: s_bolt_sling
+  coil: c_bolt_sling
+  switch: s_bolt_sling
  ac_bolt2_sling:
-    coil: c_bolt2_sling
-    switch: s_bolt2_sling
+  coil: c_bolt2_sling
+  switch: s_bolt2_sling
  ac_popbumperleft:
-    coil: c_left_pop_bumper
-    switch: s_popbumperleft
+  coil: c_left_pop_bumper
+  switch: s_popbumperleft
  ac_popbumperleft2:
-    coil: c_left_pop_bumper2
-    switch: s_popbumperleft2
+  coil: c_left_pop_bumper2
+  switch: s_popbumperleft2
  ac_popbumperright:
-    coil: c_right_pop_bumper
-    switch: s_popbumbperright
+  coil: c_right_pop_bumper
+  switch: s_popbumbperright
  ac_popbumperright2:
-    coil: c_right_pop_bumper2
-    switch: s_popbumperright2
+  coil: c_right_pop_bumper2
+  switch: s_popbumperright2
 
 playfields:
   playfield:
