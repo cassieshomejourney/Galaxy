@@ -404,32 +404,32 @@ lights:
  l_left_strip15:
   number: 50
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip16:
   number: 51
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip17:
   number: 52
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip18:
   number: 53
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip19:
   number: 54
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip20:
   number: 55
   platform_settings:
-    polarity: false
+   polarity: false
   tags: left strip
  l_left_strip21:
   number: 56
