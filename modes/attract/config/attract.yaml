@@ -11,7 +11,7 @@ event_player:
   s_start_active: sw_add_player
 counters:
   attract_theme_once:
-    count_events: carousel_item_highlighter{carousel == "attract" and item =="cosmic intro"}
+    count_events: carousel_item_highlighter{carousel == "attract" and item =="galaxy intro"}
     count_complete_value: 1
     events_when_complete: play_attract_theme
     disable_on_complete: true
